@@ -158,13 +158,12 @@ void SenregistrerFete(){
         int choixFete;
         cin>>choixFete;
         fetes[choixFete-1].SaveGuest(invites[0]);
-        cout<<"Nbre des fetes : "<<fetes[choixFete-1].nbreInvit();
     }
     else {
         cout <<"Pour choisir entrer votre identifiant( numero )";
         int identifiant;
         cin>>identifiant;
-        Invite guest=invites[identifiant];
+        Invite guest=invites[identifiant-1];
         cout <<" Choisissez le numero de la fete que vous voulez : ";
         int choixFete;
         cin>>choixFete;

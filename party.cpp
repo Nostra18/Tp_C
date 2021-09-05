@@ -74,11 +74,8 @@ void Party:: SaveGuest (Invite &guest){
             for (int i; i<PlacesVip.size(); i++) {
                 if (nombreInvites[PlacesVip[i]].nom=="Anonyme"){
                     nombreInvites[PlacesVip[i]]=guest;
-                    cout<<" PLACE VIP !! "<<endl;
+                    cout<<endl<<"VOUS AVEZ EU UNE PLACE VIP !! "<<endl;
                     nombreInvites[PlacesVip[i]].afficherInvite();
-                    int a =nbreInvit();
-                    cout<<"Nbre : "<<a;
-                    cout<<"Place : "<< PlacesVip[i]<<endl;
                     comptPlace++;
                 }
                 break;
@@ -98,7 +95,7 @@ void Party:: SaveGuest (Invite &guest){
             else {
                 if (nombreInvites[i].nom=="Anonyme") {
                     nombreInvites[i]=guest;
-                    cout<<"PLACE NORMAL !!";
+                    cout<<endl<<"VOUS AVEZ EU UNE PLACE NORMAL !!";
                     compteurFinal++;
                     compteurNonVip++;
                     break;
